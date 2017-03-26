@@ -53,7 +53,7 @@ module.exports = {
     initPopper () {
       this.popperId = this.uuid4()
       this.popper = new Popper(
-        this.$el,
+        this.$parent.$el,
         this.$el.querySelector('.vue-popper-component'),
         {
           placement: this.placement || 'bottom',
